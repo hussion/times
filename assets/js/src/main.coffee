@@ -13,11 +13,9 @@ $ ->
   $(window).on "resize", Uno.device()
   $(window).on "orientationchange", Uno.device()
 
-  Uno.readTime()
   FastClick.attach el unless Uno.is 'device', 'desktop'
 
   if Uno.is 'page', 'post'
-    $('.main').readingTime readingTimeTarget: '.post.reading-time > span'
     $('.content').fitVids()
     postTitle = $('#post-title').text()
     postTitle = postTitle.substring(0, postTitle.length - 1); # delete dot
