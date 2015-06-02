@@ -1,26 +1,23 @@
 {
-  "name": "uno-zen",
-  "description": "Minimalist and Elegant theme for Ghost",
-  "homepage": "https://github.com/kikobeats/uno-zen",
-  "version": "2.2.1",
+  "name": "times",
+  "description": "A Beautiful Ghost Blog Theme",
+  "homepage": "https://github.com/hussion/times",
+  "version": "0.1",
   "author": {
-    "name": "Kiko Beats",
-    "url": "https://github.com/kikobeats"
+    "name": "hussion",
+    "url": "https://github.com/hussion"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kikobeats/uno-zen"
+    "url": "https://github.com/hussion/times"
   },
   "bugs": {
-    "url": "https://github.com/Kikobeats/uno-zen/issues"
+    "url": "https://github.com/hussion/times/issues"
   },
   "keywords": [
     "ghost",
     "theme",
-    "uno",
-    "zen",
-    "elegant",
-    "minimalism"
+    "times"
   ],
   "devDependencies": {
     "browser-sync": "*",
