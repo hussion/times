@@ -1,0 +1,46 @@
+@mixin background-filter {
+  background: linear-gradient(150deg,rgba(0, 0, 0, 0.3) 30%,rgba(0, 0, 0, 0.4) 70%) 0 0/cover fixed,url(/assets/img/cover.jpg) center/cover no-repeat fixed;
+}
+@mixin center-absolute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin font-shadow {
+  text-shadow: 0 1px 1px rgba(000, 000, 000, .4);
+}
+@mixin btn-cover {
+  position: relative;
+  display: block;
+  font-size: .9em;
+  color: $gray-lightest;
+  text-shadow: none;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  opacity: .8;
+  -webkit-font-smoothing: antialiased;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@mixin btn-cover-with-border {
+  @extend btn-cover;
+  border: 1px solid $gray-lightest;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+  :-moz-placeholder {
+    @content
+  }
+  ::-moz-placeholder {
+    @content
+  }
+  :-ms-input-placeholder {
+    @content
+  }
+}

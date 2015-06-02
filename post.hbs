@@ -1,0 +1,24 @@
+{{!< default}}
+
+{{#post}}
+
+  <article class="{{post_class}}">
+    <header>
+      <a id="back-button" class="btn small square" href="javascript:history.back()">« Back</a>
+      <div class="post meta">
+        <time datetime="{{date format="DD MMM YYYY"}}">{{date format="DD MMM YYYY"}}</time>
+        <span class="post tags">{{tags prefix=" under " separator=" "}}</span>
+      </div>
+      {{#if image}}<img id="post-image" src={{image}} alt="{{{title}}}">{{/if}}
+      <h1 id="post-title">{{{title}}}.</h1>
+    </header>
+
+    <section class="{{post_class}}">
+      {{content}}
+    </section>
+
+  </article>
+
+  {{> comments}}
+
+{{/post}}

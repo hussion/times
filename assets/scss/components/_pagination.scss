@@ -1,0 +1,15 @@
+.pagination {
+  margin: 0 0 2.5rem;
+}
+.posts.index {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: .8rem;
+  color: $gray-dark;
+}
+.newer:hover,
+.older:hover {
+  background-color: rgba($primary-color, .7);
+  color: #fff;
+  border-color: rgba($primary-color, .7);
+}
