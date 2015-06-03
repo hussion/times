@@ -28,11 +28,11 @@ node_modules
 
 # bower vendor
 assets/vendor
-assets/js/src
-assets/scss
+#assets/js/src
+#assets/scss
 
-.bowerrc
-.bumpedrc
-bower.json
-gulpfile.coffee
-gulpfile.js
+#.bowerrc
+#.bumpedrc
+#bower.json
+#gulpfile.coffee
+#gulpfile.js
