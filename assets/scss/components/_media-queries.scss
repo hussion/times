@@ -67,7 +67,7 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
-    overflow: scroll;
+    // overflow: scroll;
 
     &.contact {
       margin-top: 1rem;
@@ -98,6 +98,7 @@
 
     &:hover {
       background-color: darken($aside-color-mobile, 5%);
+      color: lighten($primary-color, .7);
     }
   }
   #avatar-link {

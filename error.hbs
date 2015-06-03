@@ -3,35 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Houston, we have a problem - {{@blog.title}}</title>
+    <title>404 - {{@blog.title}}</title>
     {{> meta}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/uno.css"}}" />
-    {{ghost_head}}
   </head>
   <body>
-    <article>
-      <section>
-        <div class="astro-wrap">
-          <a class="astronaut" href="#" title="return to base"></a>
-        </div>
-        <div class="mayday">
-          <h1>
-          Houston, we've got a problem. <br>
-          Houston, 404 error appeared.
-          </h1>
-          <hr class="divider short">
-          <h1>
-          What happens now?
-          </h1>
-        </div>
-        <div class="astro-options">
-          <a id="panic-button" class="btn small" href="#">Panic button</a>
-          <a id="safe-button" class="btn small" href="/#open">Safe button</a>
-        </div>
-      </section>
-    </article>
+    <section id="error-wrap">
+      <div class="mayday">
+        <h1>OH, 404 Not Found.</h1>
+        <hr class="divider short">
+      </div>
+      <div class="astro-options">
+        <a id="safe-button" class="btn" href="/#open">Go Home</a>
+      </div>
+    </section>
     {{ghost_foot}}
     <script type="text/javascript" src="{{asset "js/uno.js"}}"></script>
-    {{> google-analytics}}
   </body>
 </html>

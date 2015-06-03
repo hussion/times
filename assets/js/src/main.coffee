@@ -16,7 +16,6 @@ $ ->
   FastClick.attach el unless Uno.is 'device', 'desktop'
 
   if Uno.is 'page', 'post'
-    $('.content').fitVids()
     postTitle = $('#post-title').text()
     postTitle = postTitle.substring(0, postTitle.length - 1); # delete dot
     shareLink = "http://twitter.com/share?url=" + encodeURIComponent(document.URL)

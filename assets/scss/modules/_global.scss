@@ -49,7 +49,7 @@ h5 {
   margin-top: 3rem;
   margin-bottom: .8rem;
   font-family: $serif-font;
-  font-weight: lighter;
+  // font-weight: lighter;
   color: $gray-darkest;
   -webkit-font-smoothing: antialiased;
 }
@@ -81,11 +81,18 @@ p {
   > code {
     border: 1px solid #D9D9D9;
     border-radius: 3px;
-    padding: 0.09rem 0.2rem;
+    padding: 0.09rem 0.3rem;
     font-family: $code-font;
     font-weight: $font-weight-normal;
     font-size: .85rem;
-    color: $gray-dark;
+    color: $primary-color;
+    margin-left: .3rem;
+    margin-right: .3rem;
+    background-color: #f8f8f8;
+  }
+  > a {
+    color: $primary-color;
+    text-decoration: none;
   }
 }
 strong {
@@ -95,11 +102,11 @@ em {
   font-style: italic;
 }
 blockquote {
+  border-left: 5px solid;
   > p {
     line-height: 1.4;
-    text-align: center;
-    font-size: 1.8rem;
-    margin: 2.5rem -3rem;
+    font-size: 1rem;
+    padding: .5rem 0 .5rem 1rem;
     font-family: $quote-font;
     letter-spacing: .01rem;
     font-style: italic;
@@ -195,15 +202,18 @@ pre {
     }
     > footer {
       display: block;
+      margin-top: .7rem;
       padding: 2em 0 0;
       font-size: .7em;
-      color: lighten($gray-dark, 10%);
-      border-top: 2px solid $gray-light;
+      color: rgba(0,39,59,.35);
+      border-top: 2px solid rgba(0,39,59,.08);
     }
   }
 }
 .copyright {
   display: block;
+  font-size: 1rem;
+  font-family: $text-font;
   margin-bottom: .7em;
 
   a {

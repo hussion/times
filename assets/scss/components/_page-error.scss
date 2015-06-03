@@ -22,19 +22,24 @@ body[data-page='error'] {
     text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
   }
 }
-.astro-wrap {
-  position: relative;
-  width: 175px;
-  height: 283px;
-  margin: -7px auto;
-}
-.astronaut {
+#error-wrap {
+  width: 320px;
+  height: 320px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 175px;
-  height: 283px;
-  background: url('/assets/img/astronaut.png');
-  transform: translate(0, 50px);
-  animation: move 10s infinite;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  // background-color: rgba(60,70,80, .5);
+}
+#safe-button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #333;
+  &:hover {
+    background-color: lighten($primary-color, .7);
+    border-color: lighten($primary-color, .7);
+    color: #fff;
+  }
 }
