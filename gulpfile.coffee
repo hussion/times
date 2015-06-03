@@ -26,7 +26,7 @@ PORT =
 
 src =
   sass:
-    main   : 'assets/scss/uno.scss'
+    main   : 'assets/scss/times.scss'
     files  : ['assets/scss/**/**']
   js       :
     main   : ['assets/js/src/__init.coffee'
@@ -36,11 +36,9 @@ src =
               'assets/js/src/post.coffee']
     vendor : ['assets/vendor/fastclick/lib/fastclick.js'
               'assets/vendor/ghostHunter/jquery.ghostHunter.min.js'
-              'assets/vendor/pace/pace.min.js'
-              'assets/vendor/fitvids/jquery.fitvids.js'
-              'assets/vendor/reading-time/build/readingTime.min.js']
+              'assets/vendor/pace/pace.min.js']
   css      :
-    main   : 'assets/css/uno.css'
+    main   : 'assets/css/times.css'
     vendor : []
 
 dist =
@@ -63,7 +61,7 @@ gulp.task 'css', ->
   .pipe changed dist.css
   .pipe addsrc src.sass.main
   .pipe sass().on "error", gutil.log
-  .pipe concat 'uno.css'
+  .pipe concat 'times.css'
   .pipe prefix()
   .pipe strip
     all: true
@@ -77,7 +75,7 @@ gulp.task 'js', ->
   .pipe changed dist.js
   .pipe coffee().on "error", gutil.log
   .pipe addsrc src.js.vendor
-  .pipe concat 'uno.js'
+  .pipe concat 'times.js'
   .pipe uglify mangle: false
   .pipe header banner, pkg: pkg
   .pipe gulp.dest dist.js

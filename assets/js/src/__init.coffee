@@ -1,8 +1,8 @@
 'use strict'
 
 $ ->
-  window.Uno = Uno =
-    version: '2.2.1'
+  window.Times = Times =
+    version: '1.1.2'
 
     search:
       container: -> $('#results')

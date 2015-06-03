@@ -98,7 +98,7 @@
 
     &:hover {
       background-color: darken($aside-color-mobile, 5%);
-      color: lighten($primary-color, .7);
+      color: lighten($primary-color, .7)!important;
     }
   }
   #avatar-link {
@@ -116,6 +116,9 @@
         width: 100%;
       }
     }
+  }
+  .navigation.right .social.item a {
+    padding: 6px 6px 6px 7px;
   }
   .main {
     left: 0;

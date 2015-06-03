@@ -105,6 +105,8 @@
 }
 .link-item {
   float: none;
+  color: #333!important;
+  background-color: #fff;
   padding: .5rem 1.25rem;
   @include btn-cover;
 
