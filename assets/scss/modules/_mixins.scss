@@ -1,5 +1,5 @@
 @mixin background-filter {
-  background: linear-gradient(150deg,rgba(0, 0, 0, 0.3) 30%,rgba(0, 0, 0, 0.4) 70%) 0 0/cover fixed,url(/assets/img/cover.jpg) center/cover no-repeat fixed;
+  background: linear-gradient(150deg,rgba(0, 0, 0, 0.3) 30%,rgba(0, 0, 0, 0.4) 70%) 0 0/cover fixed,url(http://7d9mth.com1.z0.glb.clouddn.com/cover.jpg) center/cover no-repeat fixed;
 }
 @mixin center-absolute {
   display: flex;
